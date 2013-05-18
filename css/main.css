@@ -1,0 +1,496 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=c772b7c2-9f01-4137-90a0-77215c6da647");
+@font-face{
+font-family:"Conduit ITC W01 Black";
+src:url("/blob/fonts/dbf358dd-4b73-4f9d-9c2a-6f9260f9da69.eot?#iefix");
+src:url("/blob/fonts/dbf358dd-4b73-4f9d-9c2a-6f9260f9da69.eot?#iefix") format("eot"),url("/blob/fonts/e560b829-e02c-4a01-bbe1-ddc574c1f8e8.woff") format("woff"),url("/blob/fonts/d3baf0dc-04c7-4f98-a85b-6eb2d44be02a.ttf") format("truetype"),url("/blob/fonts/9372a370-abb4-4516-836c-d7ca85e7f06a.svg#9372a370-abb4-4516-836c-d7ca85e7f06a") format("svg");
+}
+@font-face{
+font-family:"Conduit ITC W01 Bold";
+src:url("/blob/fonts/ef1cf8c3-989e-4b7e-ad89-9e034d47686d.eot?#iefix");
+src:url("/blob/fonts/ef1cf8c3-989e-4b7e-ad89-9e034d47686d.eot?#iefix") format("eot"),url("/blob/fonts/fdaf48d4-c023-4a03-b948-53535ee4d571.woff") format("woff"),url("/blob/fonts/ca6dc25e-d400-4735-9fb9-ee2d025ebb5c.ttf") format("truetype"),url("/blob/fonts/aa206b9b-b888-4ce6-8039-669469e9b429.svg#aa206b9b-b888-4ce6-8039-669469e9b429") format("svg");
+}
+@font-face{
+font-family:"ConduitITCW01-ExtraLigh 731268";
+src:url("/blob/fonts/56e483c2-8f13-4a25-a380-5f99bd42a54e.eot?#iefix");
+src:url("/blob/fonts/56e483c2-8f13-4a25-a380-5f99bd42a54e.eot?#iefix") format("eot"),url("/blob/fonts/b2edcd10-e47c-46ce-a26e-abc326913231.woff") format("woff"),url("/blob/fonts/2ca7ac3e-e9ad-4469-ad0f-7ca39807abb6.ttf") format("truetype"),url("/blob/fonts/97620ad5-a20b-4d15-846e-062fa737d4c2.svg#97620ad5-a20b-4d15-846e-062fa737d4c2") format("svg");
+}
+@font-face{
+font-family:"Conduit ITC W01 Italic";
+src:url("/blob/fonts/6c436973-c7bc-4fa8-8015-3e3a5fe41514.eot?#iefix");
+src:url("/blob/fonts/6c436973-c7bc-4fa8-8015-3e3a5fe41514.eot?#iefix") format("eot"),url("/blob/fonts/0d4b4097-9f7f-486f-b108-07f6ab48ca1d.woff") format("woff"),url("/blob/fonts/8e21264d-f678-4005-b90c-8d8288a0d179.ttf") format("truetype"),url("/blob/fonts/a084d860-2279-4910-b924-82b72dcc36e0.svg#a084d860-2279-4910-b924-82b72dcc36e0") format("svg");
+}
+@font-face{
+font-family:"Conduit ITC W01 Light";
+src:url("/blob/fonts/45fa0132-0858-4e18-9594-5a070788a059.eot?#iefix");
+src:url("/blob/fonts/45fa0132-0858-4e18-9594-5a070788a059.eot?#iefix") format("eot"),url("/blob/fonts/e924c59f-bc21-471f-ad1b-cefd0c1a6315.woff") format("woff"),url("/blob/fonts/13b88c12-e5f0-46c4-932a-57fe881b7c46.ttf") format("truetype"),url("/blob/fonts/cf39e66c-fff7-43d5-b865-0a45543d590a.svg#cf39e66c-fff7-43d5-b865-0a45543d590a") format("svg");
+}
+@font-face{
+font-family:"ConduitITCW01-LightItal";
+src:url("/blob/fonts/9e32d14b-d2cb-4be9-8244-4518db105eb7.eot?#iefix");
+src:url("/blob/fonts/9e32d14b-d2cb-4be9-8244-4518db105eb7.eot?#iefix") format("eot"),url("/blob/fonts/cb1d6e54-081d-429a-a0e2-e09f003b52f6.woff") format("woff"),url("/blob/fonts/4e4ba5dd-4e46-4afe-804b-624ab0b31d9e.ttf") format("truetype"),url("/blob/fonts/64bf7dd4-f691-4801-b042-b720c1c115bd.svg#64bf7dd4-f691-4801-b042-b720c1c115bd") format("svg");
+}
+@font-face{
+font-family:"Conduit ITC W01 Regular";
+src:url("/blob/fonts/367b2d50-c71b-4348-b8e2-d364f82386ea.eot?#iefix");
+src:url("/blob/fonts/367b2d50-c71b-4348-b8e2-d364f82386ea.eot?#iefix") format("eot"),url("/blob/fonts/e328f17d-e8e5-424f-92e8-31af32b2ebac.woff") format("woff"),url("/blob/fonts/97556a76-3d0b-4ad7-ae17-02b5d97e928b.ttf") format("truetype"),url("/blob/fonts/407529ad-dcaa-4637-ac62-6cf9265d4f52.svg#407529ad-dcaa-4637-ac62-6cf9265d4f52") format("svg");
+}
+
+	
+	body {
+        font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+		font-size: .8em;
+      }
+	  
+	a {text-decoration:none;color:#1f79b8;}
+	
+	  h1,h2,h3,h4,h5,.h1 {font-family:"Conduit ITC W01 Black";color:#1f79b8;font-weight:100}
+      h1 a {
+        text-decoration: none;
+        color: #3b5998;
+      }
+      h1 a:hover {
+        text-decoration: underline;
+      }
+	  
+	  h1, .h1 {font-size: 3.5em;margin-bottom: 10px;}
+	  h2 {font-size: 3em;}
+	  h3 {font-size: 2em;}
+	  
+	  .container {float:left;width:100%;}
+	  
+	  /* ------------------------------------------
+	CSS3 FACEBOOK-STYLE BUTTONS (Nicolas Gallagher)
+	Licensed under Unlicense
+	http://github.com/necolas/css3-facebook-buttons
+	------------------------------------------ */
+	hr {border:none;background:none;border-bottom: 5px solid #eee;margin: 20px 0;}
+	fieldset hr {margin:10px 0;}
+	img {border:none;}
+	
+	/* ------------------------------------------------------------------------------------------------------------- BUTTON */
+		
+	.buttons {margin-top:-10px;width:30%;float:left;}
+	
+	.item {float:left;width:100%;margin-bottom: 10px;padding-bottom: 10px; border-bottom: 5px solid #eee;}
+	
+	.header {float:left;width:100%;position:relative;}
+	.pull-left {float:left;}
+	.logoholder {width:20%;}
+	.headlineholder {width:70%;margin-left:7%;}
+	.headlineholder h1 {margin:5px 0 3px 0;font-size:3.8em;line-height:.9em;}
+	.headlineholder h2 {margin:0;font-size:2.4em;line-height:.9em;}
+	.headlineholder p {margin: 5px 0 0 0;}
+	.logo {width:100%;max-width:190px;}
+	.fblike {position:absolute;top:20%;right:0}
+	.pull-right {float:right;}
+	
+	.votebutton {
+		font-family:"Conduit ITC W01 Bold";
+		font-size: 1.5em;
+		padding: 5px 20px;
+		background:#14ba45;
+		color: #fff;
+    	font-weight: 700;
+		font-size: 3em;
+		display: block;
+		padding: 4px 10px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		-webkit-box-shadow: 0px 9px 0px #0d9034, 0px 9px 15px rgba(0,0,0,.7);
+		-moz-box-shadow: 0px 9px 0px #0d9034, 0px 9px 15px rgba(0,0,0,.7);
+		box-shadow: 0px 9px 0px #0d9034, 0px 9px 15px rgba(0,0,0,.7);
+		margin: 20px auto;
+		text-align: center;
+		max-width: 80%;
+		min-width: 250px;
+		
+		-webkit-transition: all .1s ease;
+		-moz-transition: all .1s ease;
+		-ms-transition: all .1s ease;
+		-o-transition: all .1s ease;
+		transition: all .1s ease;
+		
+		cursor: pointer;
+		
+		text-shadow: -1px -1px 1px rgba(0,0,0,.4)
+		
+		}
+	
+	.votebutton:hover {
+		 -webkit-box-shadow: 0px 3px 0px #0d9034), 0px 3px 6px rgba(0,0,0,.9);
+		-moz-box-shadow: 0px 3px 0px #0d9034, 0px 3px 6px rgba(0,0,0,.9);
+		box-shadow: 0px 3px 0px #0d9034, 0px 3px 6px rgba(0,0,0,.9);
+		position: relative;
+		top: 6px;
+		}
+		
+	.votebutton.recommend, .votebutton.post, .votebutton.send {
+		font-size: 1.3em;
+		background: #2b7cbc;
+		box-shadow: 0px 5px 0px #214d96, 0px 9px 15px rgba(0,0,0,.4);
+		-moz-box-shadow: 0px 5px 0px #214d96, 0px 9px 15px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0px 5px 0px #214d96, 0px 9px 15px rgba(0,0,0,.4);
+		}
+	
+		
+	p.error {color:red; padding: 10px;border:1px solid red;border-radius:5px;background:#FFD9D9;}
+	p.message {color:green; padding: 5%;border:1px solid green;border-radius:5px;background:#CEFFCE;float:left;width:89%}
+	
+	.imgholder {position:relative;width:100%;height:300px;border-radius: 3px 20px ;display:block;z-index:99;background:#214d96;}
+	.imgholder h1, .imgholder .h1 {color:#fff;text-shadow: -1px -1px 2px rgba(0,0,0,.8);margin:10px;width:70%;float:left;}
+	.imgholder .voting {padding: 10px 20px;color:#fff;background: #2b7cbc;font-size:40px;font-weight:700;z-index:999;position:absolute;top:20px;right:20px;border-radius:10px;text-align:center;font-family:"Conduit ITC W01 Black";line-height:.8em;}
+	.imgholder .voting .votes {font-size:.5em;opacity:.5;}
+	.subline {color:#999;font-size:.8em;text-align:right;}
+	.imgholder .votebutton {position:absolute;bottom:-15px;left:0;font-size:30px;}
+	
+	.imgholder .votebutton:hover {
+		bottom: -19px;
+		top:auto;
+		}
+	
+	.fbcomments {margin: 10px;float:right;}
+	.fbcomments .fbFeedbackContent .composer {background: none;}
+	
+	label {display:block;font-family:"Conduit ITC W01 Black";font-size: 20px;color:#1f79b8;}
+	input, select, textarea {padding: 3px; border-radius: 3px;border:1px solid #ccc;}
+	input:disabled {background:#fff;color:#22a0d3;font-weight:700;border:none;}
+	
+	fieldset {border:5px solid #eee;border-radius:10px;margin-top:20px;}
+	fieldset hr {}
+	legend {color:#999;font-weight:700;}
+	
+	.btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+
+.btn:first-child {
+  *margin-left: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+.btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+.btn-mini {
+  padding: 0 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #0044cc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9;
+}
+
+.btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9;
+}
+
+.btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  *background-color: #bd362f;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9;
+}
+
+.btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+
+.table-striped td {margin:0;border-bottom:1px solid #ccc;padding:10px 5px;}
