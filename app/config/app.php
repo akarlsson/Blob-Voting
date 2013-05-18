@@ -31,6 +31,7 @@ return array(
 	'fbappid'     => '458082764272869',
 	'fbtablink'   => 'https://www.facebook.com/austria.blob/app_458082764272869?1',
 	'fbappsecret' => 'af0ee91b1ffb7a4c8f6c3b14758eb095',
+	'author'  => 'Andreas Augustin',
 
 	/*
 	|--------------------------------------------------------------------------
