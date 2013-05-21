@@ -123,9 +123,9 @@ class ItemsController extends BaseController {
         $item = $this->item->findOrFail($id);
 		
 		if (Holmes::is_mobile()==false) {
-			//return Redirect :: to (Config::get('app.fbtablink').'&'.rand(0,3000000).'&app_data=detail'.$item->id);
+			return Redirect :: to (Config::get('app.fbtablink').'&'.rand(0,3000000).'&app_data=detail'.$item->id);
 			//return Redirect :: to (Request::root().'/?app_data=detail'.$item->id);
-			return View::make('items.show', compact('item'));
+			//return View::make('items.show', compact('item'));
 		} else {
 		   //return View::make('items.show', compact('item'));
 		   return Redirect :: to (Request::root().'/?app_data=detail'.$item->id);

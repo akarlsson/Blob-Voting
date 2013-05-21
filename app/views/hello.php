@@ -48,7 +48,7 @@ if ($user) {
 	$params = array(
 	  'canvas'    => 1,
 	  'fbconnect' => 0,
-	  'scope' => 'user_likes,email,publish_actions',
+	  'scope' => 'user_likes,email',
 	  'redirect_uri' => Request::root()
 	);	
   $loginUrl = $facebook->getLoginUrl($params);
@@ -65,6 +65,17 @@ if ($user) {
     
   </head>
   <body>
+  	
+  	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-41031775-1', 'blueberrymedia.at');
+	  ga('send', 'pageview');
+	
+	</script>
   
   <div class="header">
   	<div class="pull-left logoholder"><a target="_parent" href="<?php echo Request::root() ?>"><img src="<?php echo Request::root() ?>/img/logo.jpg?123" class="logo" alt="BLOB"></a></div>
@@ -221,6 +232,9 @@ if ($user) {
 			   // VIEW AN ITEM
 	  
 			  $item = Item::find($id);
+			  
+			  if (is_object($item)&&$item->active==1) {
+			  
 			  $votes = Vote::where('item_id','=',$item->id)->count();
 			  
 			  
@@ -314,7 +328,7 @@ if ($user) {
 					</script>
 			  
 			 <?php
-	
+			 }
 		  }
 		  
 		  

@@ -41,34 +41,43 @@ class VotesController extends BaseController {
      *
      * @return Response
      */
-    public function store()
+    public function store($user, $id)
     {
-        $input = Input::all();
-		
-		$vote = Vote::new();
 		
 		$facebook = new Facebook(array(
-		  'appId'  => '458082764272869',
-		  'secret' => 'af0ee91b1ffb7a4c8f6c3b14758eb095',
+		  'appId'  => Config::get('app.fbappid'),
+		  'secret' => Config::get('app.fbappsecret'),
 		));
 		
-		// Get User ID
 		$user = $facebook->getUser();
 		
-		$input->fbid = $user;
-        $validation = Validator::make($input, Vote::$rules);
-
-        if ($validation->passes())
-        {
-            $this->vote->create($input);
-
-            return Redirect::route('votes.index');
-        }
-
-        return Redirect::route('votes.create')
-            ->withInput()
-            ->withErrors($validation)
-            ->with('flash', 'There were validation errors.');
+		if (isset($user)) {
+		
+        $checkvote = Vote::where('fbid', '=', $user)->where('item_id', '=', $id)->count();
+			
+				if ($checkvote!=0) {
+				
+					echo "<h1>Hol dir deinen Blob!</h1><p class='error'>Du hast für diesen Teilnehmer bereits abgestimmt.</p>";
+				
+		 		} else {
+			
+					$vote = new Vote;		
+					$vote->fbid = $user;
+					$vote->item_id = $id;
+					
+					$vote->save();
+					
+					echo "<h1>Hol dir deinen Blob!</h1><p class='message'>Danke für deine Stimme.</p>";
+					
+					/*$response = $facebook->api(
+					  'me/blobaustriavoting:vote',
+					  'POST',
+					  array(
+						'location' => "http://app.blueberrymedia.at/blob/items/".$id
+					  )
+					);*/
+				}
+				}
     }
 
     /**
