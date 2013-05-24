@@ -82,9 +82,9 @@ class ItemsController extends BaseController {
 				// Resize to 600 wide maintain ratio
 				$image->resizeInPixel(800, null, true);
 				 
-				$watermark = ImgW::initFromPath( public_path().'/img/logo.png');
+				//$watermark = ImgW::initFromPath( public_path().'/img/logo.png');
 				 
-				$image->addLayerOnTop($watermark, 20, 10, 'RB');
+				//$image->addLayerOnTop($watermark, 20, 10, 'RB');
 				 
 				// Save over original
 				$image->save($folder, $filename);			
