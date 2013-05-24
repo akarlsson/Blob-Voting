@@ -24,9 +24,9 @@ return array(
 	|
 	*/
 	
-	'votingstart' => '2013-05-24 00:00:00',
+	'votingstart' => '2013-05-24 12:00:00',
 	'votingend' => '2013-06-20 00:00:00',
-	'fbpageid'    => '178117535688374',
+	'fbpageid'    => '139741292744213',
 	'fbpagelink'   => 'https://www.facebook.com/austria.blob?1',
 	'fbappid'     => '458082764272869',
 	'fbtablink'   => 'https://www.facebook.com/austria.blob/app_458082764272869?1',
