@@ -43,6 +43,8 @@ class ItemsController extends BaseController {
 		));
         return View::make('items.create', compact('facebook'));
     }
+	
+	
 
     /**
      * Store a newly created resource in storage.

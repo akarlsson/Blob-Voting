@@ -13,16 +13,19 @@
 
 Route::any('/', function()
 {
-	if (Holmes::is_mobile()==false) {
-		return Redirect :: to (Config::get('app.fbtablink').'&'.rand(0,3000000).'&ref=ts');
-	} else {
 		return View::make('hello');
-	}
+
 });
 
 Route::any('/hello', function()
 {
 		return View::make('hello');
+
+});
+
+Route::any('/test_hello', function()
+{
+		return View::make('test_hello');
 
 });
 
@@ -46,6 +49,12 @@ Route::any('/start', function()
 {
 	return View::make('hello');
 });
+
+Route::any('/check', function()
+{	
+	return View::make('items.checker');
+});
+
 
 Route::resource('items', 'ItemsController');
 

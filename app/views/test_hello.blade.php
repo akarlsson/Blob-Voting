@@ -1,10 +1,4 @@
-<?php if (Holmes::is_mobile()==false) { ?>
-<script>
-if (top == self) { 
-	top.location = "https://www.facebook.com/austria.blob/app_458082764272869?1&297268&ref=ts"; 
-	}
-</script>
-<?php } ?>
+
 
 <?php
 
@@ -27,11 +21,9 @@ $facebook = new Facebook(array(
 
 $urlrand = rand(1,300000000);
 
-if (Holmes::is_mobile()==false) {
-$fblink = Config::get('app.fbtablink').'&'.$urlrand.'&ref=ts';
-} else {
+
 $fblink = Request::root()."?".$urlrand;
-}
+
 
 // Get User ID
 $user = $facebook->getUser();
@@ -70,7 +62,7 @@ if ($user) {
 	  'canvas'    => 1,
 	  'fbconnect' => 0,
 	  'scope' => 'user_likes,email',
-	  'redirect_uri' => Request::root()
+	  'redirect_uri' => Request::root().'/test_hello'
 	);	
   $loginUrl = $facebook->getLoginUrl($params);
 }
@@ -92,16 +84,6 @@ if ($user) {
   </head>
   <body>
   	
-  	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-41031775-1', 'blueberrymedia.at');
-	  ga('send', 'pageview');
-	
-	</script>
   
   <div class="header">
   	<div class="pull-left logoholder"><a target="_parent" href="{{ Request::root() }}"><img src="{{ Request::root() }}/img/logo.jpg?123" class="logo" alt="BLOB"></a></div>
@@ -242,7 +224,6 @@ if ($user) {
 					
 					echo "<h1>Hol dir deinen Blob!</h1><p class='message'>Danke für deine Stimme.</p>";
 					
-					
 					/*$response = $facebook->api(
 					  'me/blobaustriavoting:vote',
 					  'POST',
@@ -253,24 +234,6 @@ if ($user) {
 							
 					
 				}
-				
-				$item = Item::find($id);
-					?>
-					<script>
-					window.fbAsyncInit = function(){
-					FB.ui({
-						method: "feed",
-						name: ("Gewinnen wir ein Blob-Event!"),
-						link: "{{ Request::root() }}/items/{{ $item->id }}",
-						picture: "{{ Request::root() }}/photos/{{ $item->image }}",
-						description: ("Vote für {{ $item->name }}! Je mehr Stimmen, desto größer ist die Chance! Wir brauchen deine Unterstützung!"),
-						redirect_uri: "{{ Request::root() }}/items/{{ $item->id }}"
-				
-					});
-					}
-					</script>
-					<?php
-				
 				echo "<div style='position:relative;float:left;text-align:center;width:100%;margin: 20px auto 50px auto;'><div><a href='".$fblink."&app_data=detail".$id."' target='_parent' class='votebutton'>Zurück zum Voting</a></div></div>";
 		  }
 			
@@ -289,7 +252,7 @@ if ($user) {
 			  if (is_object($item)&&$item->active==1) {
 			  
 			  $votes = Vote::where('item_id','=',$item->id)->count();
-			  $sender = User::where('fbid','=',$item->author)->take(1)->get();
+			  $sender = json_decode(file_get_contents('http://graph.facebook.com/'.$item->author))->name;
 			  
 			?> 
 				<p>&nbsp;</p>
@@ -302,9 +265,7 @@ if ($user) {
                     </div>
                 </div>
 				
-                <p class="subline">Eingeschickt von <a href="http://facebook.com/{{ $item->author }}" target="_blank">{{ $sender[0]->username }}</a>
-                
-                </p>
+                <p class="subline">Eingeschickt von <a href="http://facebook.com/{{ $item->author }}" target="_blank">{{ $sender }}</a></p>
                 
 				<p class="buttons">       
                @if ($votingstart <= $now && $votingend >= $now)	
@@ -400,7 +361,7 @@ if ($user) {
                 <?php
                 //$sender = json_decode(file_get_contents('http://graph.facebook.com/'.$item->author))->name;
 				$sender = User::where('fbid','=',$item->author)->take(1)->get();
-				echo '<p  class="subline">Eingeschickt von <a href="http://facebook.com/'.$item->author.'" target="_blank">'. $sender[0]->username.'</a></p>';
+				echo '<p  class="subline">Eingeschickt von <a href="http://facebook.com/'.$item->author.'" target="_blank">'.$sender[0]->username.'</a></p>';
 				?>
         
 		</div>
